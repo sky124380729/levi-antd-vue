@@ -295,6 +295,18 @@
   resolved "https://registry.npm.taobao.org/@ctrl/tinycolor/download/@ctrl/tinycolor-3.3.4.tgz#59691edd031eedc431bda1bdf601257c06289a40"
   integrity sha1-WWke3QMe7cQxvaG99gElfAYomkA=
 
+"@iconify/iconify@>=2.0.0-rc.6", "@iconify/iconify@^2.0.0-rc.6":
+  version "2.0.0-rc.6"
+  resolved "https://registry.npm.taobao.org/@iconify/iconify/download/@iconify/iconify-2.0.0-rc.6.tgz#e3f5376b63b441dcb3696317784b98e2e678cf46"
+  integrity sha1-4/U3a2O0QdyzaWMXeEuY4uZ4z0Y=
+  dependencies:
+    cross-fetch "^3.0.6"
+
+"@iconify/json@^1.1.297":
+  version "1.1.297"
+  resolved "https://registry.npm.taobao.org/@iconify/json/download/@iconify/json-1.1.297.tgz#ae3409fc92df3c16f5a24b3fa6e2d32ab8a912d2"
+  integrity sha1-rjQJ/JLfPBb1oks/puLTKripEtI=
+
 "@intlify/core-base@9.0.0-beta.16":
   version "9.0.0-beta.16"
   resolved "https://registry.npm.taobao.org/@intlify/core-base/download/@intlify/core-base-9.0.0-beta.16.tgz#ab35802b982f52db20d4758d020c2dcd1724e7f9"
@@ -360,6 +372,13 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
+
+"@purge-icons/generated@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.npm.taobao.org/@purge-icons/generated/download/@purge-icons/generated-0.6.0.tgz#2aa9a78fef6a4dc79d265c84548e110375b554df"
+  integrity sha1-Kqmnj+9qTcedJlyEVI4RA3W1VN8=
+  dependencies:
+    "@iconify/iconify" ">=2.0.0-rc.6"
 
 "@sentry/core@5.30.0":
   version "5.30.0"
@@ -876,6 +895,13 @@ core-js@^3.8.0:
   resolved "https://registry.npm.taobao.org/core-js/download/core-js-3.8.3.tgz?cache=0&sync_timestamp=1611038902573&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcore-js%2Fdownload%2Fcore-js-3.8.3.tgz#c21906e1f14f3689f93abcc6e26883550dd92dd0"
   integrity sha1-whkG4fFPNon5OrzG4miDVQ3ZLdA=
 
+cross-fetch@^3.0.6:
+  version "3.0.6"
+  resolved "https://registry.npm.taobao.org/cross-fetch/download/cross-fetch-3.0.6.tgz?cache=0&sync_timestamp=1599789182189&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcross-fetch%2Fdownload%2Fcross-fetch-3.0.6.tgz#3a4040bc8941e653e0e9cf17f29ebcd177d3365c"
+  integrity sha1-OkBAvIlB5lPg6c8X8p680XfTNlw=
+  dependencies:
+    node-fetch "2.6.1"
+
 cssesc@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/cssesc/download/cssesc-3.0.0.tgz#37741919903b868565e1c09ea747445cd18983ee"
@@ -1325,6 +1351,11 @@ needle@^2.5.2:
     debug "^3.2.6"
     iconv-lite "^0.4.4"
     sax "^1.2.4"
+
+node-fetch@2.6.1:
+  version "2.6.1"
+  resolved "https://registry.npm.taobao.org/node-fetch/download/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha1-BFvTI2Mfdu0uK1VXM5RBa2OaAFI=
 
 node-unique-machine-id@^1.1.0:
   version "1.1.0"

@@ -8,5 +8,8 @@ export default defineConfig({
   alias: {
     '/@': pathResolve('./src')
   },
-  plugins: [vue(),vueJSx()]
+  plugins: [vue(),vueJSx()],
+  optimizeDeps: {
+    include: ['@iconify/iconify']
+  }
 })

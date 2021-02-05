@@ -4,20 +4,25 @@ import type { PropType } from 'vue'
 import { defineComponent, ref, watch, onMounted, nextTick, unref, computed, CSSProperties } from 'vue'
 import Iconify from '@purge-icons/generated'
 import { isString } from '/@/utils/is'
-import { propTypes } from '/@/utils/propTypes'
 export default defineComponent({
     name: 'LvIcon',
     props: {
         // icon name
-        icon: propTypes.string,
+        icon: {
+            type:String as PropType<string>
+        },
         // icon color
-        color: propTypes.string,
+        color: {
+            type:String as PropType<string>
+        },
         // icon size
         size: {
             type: [String, Number] as PropType<string | number>,
             default: 16
         },
-        prefix: propTypes.string.def(''),
+        prefix: {
+            type:String as PropType<string>
+        },
         onClick: {
             type: Function as PropType<(e: MouseEvent) => void>
         }
