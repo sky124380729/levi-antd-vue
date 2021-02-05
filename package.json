@@ -1,6 +1,6 @@
 {
     "name": "levi-antd-vue",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "scripts": {
         "dev": "vite",
         "serve": "vite preview",
@@ -13,6 +13,9 @@
     },
     "main": "dist/index.js",
     "module": "dist/index.js",
+    "files": [
+        "dist"
+    ],
     "dependencies": {
         "@iconify/iconify": "^2.0.0-rc.6"
     },
