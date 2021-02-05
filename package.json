@@ -6,7 +6,7 @@
     "serve": "vite preview",
     "clean": "rimraf ./dist",
     "build-ts": "tsc -p tsconfig.build.json",
-    "build-css": "less ./src/styles/index.less ./dist/index.css",
+    "build-css": "lessc ./src/styles/index.less ./dist/index.css",
     "build": "npm run clean && npm run build-ts && npm run build-css"
   },
   "main": "dist/index.js",

@@ -1,7 +1,7 @@
 import { defineComponent, onActivated, onMounted, PropType, ref, watch, watchEffect } from 'vue'
 import type { EChartOption, ECharts } from 'echarts'
 import echarts from 'echarts'
-import { debounce, ownAddEventListener } from '/@/utils'
+import { debounce, ownAddEventListener } from '../../utils'
 
 export default defineComponent({
     name: 'LvCharts',

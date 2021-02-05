@@ -1,11 +1,11 @@
 import { defineComponent, reactive, ref, unref, PropType } from 'vue'
+import { useStore } from 'vuex'
 import { PageHeader, Table, Tooltip } from 'ant-design-vue'
 import type { ColumnProps } from 'ant-design-vue/lib/table/interface'
-import Icon from '/@/components/Icon/icon'
-import Search from '/@/components/Search/search'
-import useInCacheFn from '/@/hooks/useInCacheFn'
-import { useStore } from 'vuex'
-import { useExpose } from '/@/hooks/useExpose'
+import Icon from '../Icon'
+import Search from '../Search'
+import useInCacheFn from '../../hooks/useInCacheFn'
+import { useExpose } from '../../hooks/useExpose'
 
 interface Model {
     form: Recordable
@@ -161,7 +161,6 @@ export default defineComponent({
 
         const handle = () => {}
 
-        console.log(attrs, 'attrs')
         const getExtraSlots = () => {
             const extraSlots: any[] = []
             slots.extra && extraSlots.push(slots.extra())

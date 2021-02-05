@@ -1,6 +1,6 @@
 import { computed, defineComponent, PropType, ref, unref } from 'vue'
 import { Modal } from 'ant-design-vue'
-import Form, { ColumnType } from '../Form/form'
+import Form, { ColumnType } from '../Form'
 
 export default defineComponent({
     name: 'LvModalForm',
