@@ -1,5 +1,4 @@
 import { defineComponent, reactive, ref, unref } from 'vue'
-import './index.less'
 import { Form, Space, Button } from 'ant-design-vue'
 import { componentMap } from '/@/utils/componentMap'
 import { FormSchema } from '/@/components/Form/form'

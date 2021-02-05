@@ -6,7 +6,6 @@ import Search from '/@/components/Search/search'
 import useInCacheFn from '/@/hooks/useInCacheFn'
 import { useStore } from 'vuex'
 import { useExpose } from '/@/hooks/useExpose'
-import './index.less'
 
 interface Model {
     form: Recordable
