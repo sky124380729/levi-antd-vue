@@ -1,6 +1,6 @@
 import type { Component } from 'vue'
 import { Input, Select, Radio, Checkbox, AutoComplete, Cascader, DatePicker, InputNumber, Switch, TimePicker, TreeSelect } from 'ant-design-vue'
-// import LvSelect from '../components/Select'
+import LvSelect from '../components/Select'
 
 type ComponentType =
     | 'Input'
@@ -44,7 +44,7 @@ componentMap.set('InputTextArea', Input.TextArea)
 componentMap.set('InputNumber', InputNumber)
 componentMap.set('AutoComplete', AutoComplete)
 componentMap.set('Select', Select)
-// componentMap.set('LvSelect', LvSelect)
+componentMap.set('LvSelect', LvSelect)
 componentMap.set('TreeSelect', TreeSelect)
 componentMap.set('Switch', Switch)
 componentMap.set('RadioGroup', Radio.Group)

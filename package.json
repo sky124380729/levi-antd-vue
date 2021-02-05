@@ -8,7 +8,8 @@
         "clean": "rimraf ./dist",
         "build-ts": "tsc -p tsconfig.build.json",
         "build-css": "lessc ./src/styles/index.less ./dist/index.css",
-        "build": "npm run clean && npm run build-ts && npm run build-css"
+        "build": "npm run clean && npm run build-ts && npm run build-css",
+        "prepublishOnly": "npm run lint && npm run build"
     },
     "main": "dist/index.js",
     "module": "dist/index.js",
