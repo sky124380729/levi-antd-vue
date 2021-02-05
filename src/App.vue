@@ -1,15 +1,18 @@
 <template>
   <Form :schemas="schemas"></Form>
+  <!-- <Icon icon="octicon:file-submodule"></Icon> -->
 </template>
 
 <script lang="ts">
 import { defineComponent,ref } from 'vue'
 import Form from '/@/components/Form/form'
+// import Icon from '/@/components/Icon/icon'
 
 export default defineComponent({
   name: 'App',
   components:{
-    Form
+    Form,
+    // Icon
   },
   setup() {
     const schemas = ref([

@@ -4,7 +4,7 @@ import { Form, Space, Button } from 'ant-design-vue'
 import { componentMap } from '/@/utils/componentMap'
 import { FormSchema } from '/@/components/Form/form'
 import { isNumber } from '/@/utils/is'
-import Icon from '/@/components/Icon'
+import Icon from '/@/components/Icon/icon'
 
 interface FormProps {
     validate: () => Promise<any>
