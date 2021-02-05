@@ -1,15 +1,29 @@
 <template>
-  <test></test>
+  <Form :schemas="schemas"></Form>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import Test from './components/test'
+import { defineComponent,ref } from 'vue'
+import Form from '/@/components/Form/form'
 
 export default defineComponent({
   name: 'App',
   components:{
-    Test
+    Form
+  },
+  setup() {
+    const schemas = ref([
+            {
+                key: '用户名称',
+                label: '用户名称',
+                component: 'Input'
+            },
+            { key: 'companyName', label: '客户名称', component: 'Input', slots: { prefix: () => '$' } },
+            { key: 'socialCreditCode', label: '信用代码', component: 'Input' }
+        ])
+      return {
+        schemas
+      }
   }
 })
 </script>
