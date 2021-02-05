@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { defineComponent, reactive, ref, unref, PropType } from 'vue'
 import { useStore } from 'vuex'
 import { PageHeader, Table, Tooltip } from 'ant-design-vue'
@@ -208,11 +210,36 @@ export default defineComponent({
 
         const renderActions = () => {
             const actions = [
-                { title: '索引', filed: 'indexed', iconActive: 'mdi:format-list-numbered', iconDeactive: 'mdi:format-list-bulleted' },
-                { title: '边框', filed: 'bordered', iconActive: 'mdi:border-all', iconDeactive: 'mdi:border-none' },
-                { title: '条纹', filed: 'striped', iconActive: 'mdi:view-stream', iconDeactive: 'mdi:view-stream-outline' },
-                { title: '超出省略', filed: 'ellipsis', iconActive: 'mdi:code-brackets', iconDeactive: 'mdi:code-json' },
-                { title: '全屏', filed: 'fullscreen', iconActive: 'mdi:fullscreen-exit', iconDeactive: 'mdi:fullscreen' }
+                {
+                    title: '索引',
+                    filed: 'indexed',
+                    iconActive: 'mdi:format-list-numbered',
+                    iconDeactive: 'mdi:format-list-bulleted'
+                },
+                {
+                    title: '边框',
+                    filed: 'bordered',
+                    iconActive: 'mdi:border-all',
+                    iconDeactive: 'mdi:border-none'
+                },
+                {
+                    title: '条纹',
+                    filed: 'striped',
+                    iconActive: 'mdi:view-stream',
+                    iconDeactive: 'mdi:view-stream-outline'
+                },
+                {
+                    title: '超出省略',
+                    filed: 'ellipsis',
+                    iconActive: 'mdi:code-brackets',
+                    iconDeactive: 'mdi:code-json'
+                },
+                {
+                    title: '全屏',
+                    filed: 'fullscreen',
+                    iconActive: 'mdi:fullscreen-exit',
+                    iconDeactive: 'mdi:fullscreen'
+                }
             ]
             return actions.map((action) => (
                 <Tooltip>
@@ -232,12 +259,25 @@ export default defineComponent({
             const { columns, terms, rowKey } = props
             const { ellipsis, striped, bordered, indexed } = tableSettings
             return (
-                <div class={['levi-table', { 'levi-table--striped': striped, 'levi-table--bordered': bordered }]}>
+                <div
+                    class={[
+                        'levi-table',
+                        {
+                            'levi-table--striped': striped,
+                            'levi-table--bordered': bordered
+                        }
+                    ]}
+                >
                     <div class='levi-table__header'>
                         <div class='levi-table__search'>{terms && <Search terms={terms} onQuery={handleQuery}></Search>}</div>
                         <div class='levi-table__action'>
                             {renderActions()}
-                            <Tooltip>{{ default: () => <Icon icon='ri:refresh-line' onClick={() => reload()} />, title: () => '刷新' }}</Tooltip>
+                            <Tooltip>
+                                {{
+                                    default: () => <Icon icon='ri:refresh-line' onClick={() => reload()} />,
+                                    title: () => '刷新'
+                                }}
+                            </Tooltip>
                         </div>
                     </div>
                     <div class='levi-table__body'>

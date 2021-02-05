@@ -7,11 +7,11 @@ export default defineComponent({
     props: {
         // icon name
         icon: {
-            type:String as PropType<string>
+            type: String as PropType<string>
         },
         // icon color
         color: {
-            type:String as PropType<string>
+            type: String as PropType<string>
         },
         // icon size
         size: {
@@ -19,7 +19,7 @@ export default defineComponent({
             default: 16
         },
         prefix: {
-            type:String as PropType<string>
+            type: String as PropType<string>
         },
         onClick: {
             type: Function as PropType<(e: MouseEvent) => void>
