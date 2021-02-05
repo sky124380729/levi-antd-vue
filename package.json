@@ -16,6 +16,10 @@
     "files": [
         "dist"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sky124380729/levi-antd-vue"
+    },
     "dependencies": {
         "@iconify/iconify": "^2.0.0-rc.6"
     },
